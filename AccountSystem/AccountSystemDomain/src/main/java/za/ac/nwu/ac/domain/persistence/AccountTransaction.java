@@ -8,7 +8,6 @@ import java.util.Objects;
 @Table(name = "DEMO_ACCOUNT_TYPE", schema = "hr")
 public class AccountTransaction implements Serializable {
 
-
     private Long transactionId;
     private AccountType accountType;
     private Long memberId;
