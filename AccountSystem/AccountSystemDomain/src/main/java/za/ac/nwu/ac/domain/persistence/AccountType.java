@@ -98,4 +98,8 @@ public class AccountType implements Serializable {
                 ", creationDate=" + creationDate +
                 '}';
     }
+
+    public void setAccountTransactions(Set<AccountTransaction> accountTransactions) {
+        this.accountTransactions = accountTransactions;
+    }
 }

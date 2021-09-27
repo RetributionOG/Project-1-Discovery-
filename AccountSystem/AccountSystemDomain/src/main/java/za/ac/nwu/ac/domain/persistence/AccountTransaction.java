@@ -5,8 +5,12 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
+
+@Entity
 @Table(name = "DEMO_ACCOUNT_TYPE", schema = "hr")
 public class AccountTransaction implements Serializable {
+
+    private static final long serialVersionUID = -1420294317019175746L;
 
     private Long transactionId;
     private AccountType accountType;
@@ -17,64 +21,59 @@ public class AccountTransaction implements Serializable {
     public AccountTransaction() {
     }
 
-    public AccountTransaction(Long transactionId, AccountType accountType, Long memberId, Long amount, LocalDate transactionDate) {
+    public AccountTransaction(Long transactionId, AccountType accountType, Long memberId, Long amount, LocalDate transactionDate){
         this.transactionId = transactionId;
         this.accountType = accountType;
         this.memberId = memberId;
         this.amount = amount;
         this.transactionDate = transactionDate;
     }
+
 
     @Id
     @SequenceGenerator(name = "DEMO_ACCOUNT_TX_SEQ", sequenceName = "HR.DEMO_ACCOUNT_TX_SEQ", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "DEMO_ACCOUNT_TX_SEQ")
 
     @Column(name = "TX_ID")
-    public Long getTransactionId() {
+    private Long getTransactionId(){
         return transactionId;
     }
 
     @Column(name = "MEMBER_ID")
-    public Long getMemberId() {
+    private Long getMemberId(){
         return memberId;
     }
 
     @Column(name = "AMOUNT")
-    public Long getAmount() {
+    private Long getAmount(){
         return amount;
     }
-
     @Column(name = "TX_DATE")
-    public LocalDate getTransactionDate() {
+    private LocalDate getTransactionDate(){
         return transactionDate;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ACCOUNT_TYPE_ID")
-    public AccountType getAccountType() {
+    private AccountType getAccountType(){
         return accountType;
     }
 
-    public void setTransactionId(Long transactionId) {
+    public void setTransactionId(Long transactionId){
         this.transactionId = transactionId;
     }
-
-    public void setAccountType(AccountType accountType) {
-        this.accountType = accountType;
-    }
-
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
-
     public void setAmount(Long amount) {
         this.amount = amount;
     }
-
     public void setTransactionDate(LocalDate transactionDate) {
         this.transactionDate = transactionDate;
     }
-
+    public void setAccountType(AccountType accountType) {
+        this.accountType = accountType;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -90,10 +89,10 @@ public class AccountTransaction implements Serializable {
 
     @Override
     public String toString() {
-        return "AccountTransaction{" +
-                "transactionId=" + transactionId +
-                ", accountType=" + accountType +
-                ", memberId=" + memberId +
+        return "AccountTransaction " +
+                "transactionID" + transactionId +
+                "accountTypeId=" + accountType +
+                ", memberID=" + memberId +
                 ", amount=" + amount +
                 ", transactionDate=" + transactionDate +
                 '}';
