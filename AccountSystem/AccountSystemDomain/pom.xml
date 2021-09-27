@@ -19,11 +19,5 @@
             <artifactId>javax.persistence-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>za.ac.nwu.ac</groupId>
-            <artifactId>AccountSystemLogic</artifactId>
-            <version>${project.version}</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 </project>
