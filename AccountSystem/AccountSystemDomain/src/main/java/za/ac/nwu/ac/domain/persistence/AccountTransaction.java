@@ -5,10 +5,9 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-@Table(name = "DEMO_ACCOUNT_TYPE", schema = "VITRSA_SANDBOX")
+@Table(name = "DEMO_ACCOUNT_TYPE", schema = "hr")
 public class AccountTransaction implements Serializable {
 
-    private static final long serialVersionUID = 5320578342102714156L;
 
     private Long transactionId;
     private AccountType accountType;
@@ -19,7 +18,7 @@ public class AccountTransaction implements Serializable {
     public AccountTransaction() {
     }
 
-    public AccountTransaction(Long transactionId, Long accountTypeId, Long memberId, Long amount, LocalDate transactionDate) {
+    public AccountTransaction(Long transactionId, AccountType accountType, Long memberId, Long amount, LocalDate transactionDate) {
         this.transactionId = transactionId;
         this.accountType = accountType;
         this.memberId = memberId;
@@ -28,8 +27,8 @@ public class AccountTransaction implements Serializable {
     }
 
     @Id
-    @SequenceGenerator(name = "VIT_RSA_GENERIC_SEQ", sequenceName = "VITRSA_SANDBOX.VIT_RSA_GENERIC_SEQ", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "VIT_RSA_GENERIC_SEQ")
+    @SequenceGenerator(name = "DEMO_ACCOUNT_TX_SEQ", sequenceName = "HR.DEMO_ACCOUNT_TX_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "DEMO_ACCOUNT_TX_SEQ")
 
     @Column(name = "TX_ID")
     public Long getTransactionId() {
@@ -94,7 +93,7 @@ public class AccountTransaction implements Serializable {
     public String toString() {
         return "AccountTransaction{" +
                 "transactionId=" + transactionId +
-                ", accountTypeId=" + accountType +
+                ", accountType=" + accountType +
                 ", memberId=" + memberId +
                 ", amount=" + amount +
                 ", transactionDate=" + transactionDate +
