@@ -15,7 +15,7 @@ public class AccountType implements Serializable {
     private String accountTypeName;
     private LocalDate creationDate;
 
-    private Set<AccountTransaction> accountTransactions;
+    private Set<AccountTransactions> accountTransactions;
 
     public AccountType() {
     }
@@ -25,6 +25,9 @@ public class AccountType implements Serializable {
         this.mnemonic = mnemonic;
         this.accountTypeName = accountTypeName;
         this.creationDate = creationDate;
+    }
+
+    public AccountType(String mnemonic, String accountTypeName, LocalDate creationDate) {
     }
 
     @Id
@@ -51,13 +54,9 @@ public class AccountType implements Serializable {
         return creationDate;
     }
 
-    @OneToMany(targetEntity = AccountTransaction.class, fetch = FetchType.LAZY, mappedBy = "accountType", orphanRemoval = true, cascade = CascadeType.PERSIST)
-    public Set<AccountTransaction> getAccountTransactions() {
+    @OneToMany(targetEntity = AccountTransactions.class, fetch = FetchType.LAZY, mappedBy = "accountType", orphanRemoval = true, cascade = CascadeType.PERSIST)
+    public Set<AccountTransactions> getAccountTransactions() {
         return accountTransactions;
-    }
-
-    public void setAccountTransaction(Set<AccountTransaction> accountTransaction) {
-        this.accountTransactions= accountTransaction;
     }
 
     public void setAccountTypeId(Long accountTypeId) {
@@ -99,7 +98,15 @@ public class AccountType implements Serializable {
                 '}';
     }
 
-    public void setAccountTransactions(Set<AccountTransaction> accountTransactions) {
+    public AccountType(Long accountTypeId, String mnemonic, String accountTypeName, LocalDate creationDate, Set<AccountTransactions> accountTransactions) {
+        this.accountTypeId = accountTypeId;
+        this.mnemonic = mnemonic;
+        this.accountTypeName = accountTypeName;
+        this.creationDate = creationDate;
+        this.accountTransactions = accountTransactions;
+    }
+
+    public void setAccountTransactions(Set<AccountTransactions> accountTransactions) {
         this.accountTransactions = accountTransactions;
     }
 }
