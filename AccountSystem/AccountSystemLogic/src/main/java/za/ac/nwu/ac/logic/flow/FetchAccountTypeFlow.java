@@ -1,9 +1,9 @@
-package za.ac.nwu.ac.translator;
+package za.ac.nwu.ac.logic.flow;
 
 import za.ac.nwu.ac.domain.dto.AccountTypeDto;
 
 import java.util.List;
 
-public interface AccountTypeTranslator {
+public interface FetchAccountTypeFlow {
     List<AccountTypeDto> getAllAccountTypes();
 }
