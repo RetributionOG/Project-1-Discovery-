@@ -2,7 +2,6 @@ package za.ac.nwu.ac.translator.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import za.ac.nwu.ac.domain.dto.AccountTypeDto;
 import za.ac.nwu.ac.domain.persistence.AccountType;
 import za.ac.nwu.ac.repo.persistence.AccountTypeRepository;
 import za.ac.nwu.ac.translator.AccountTypeTranslator;
@@ -20,7 +19,7 @@ public class AccountTypeTranslatorImpl implements AccountTypeTranslator {
         this.accountTypeRepository = accountTypeRepository;
     }
 
-    @Override
+    /*@Override
     public List<AccountTypeDto> getAllAccountTypes() {
         List<AccountTypeDto> accountTypeDtos = new ArrayList<>();
         try {
@@ -32,5 +31,5 @@ public class AccountTypeTranslatorImpl implements AccountTypeTranslator {
         }
 
         return accountTypeDtos;
-    }
+    }*/
 }
