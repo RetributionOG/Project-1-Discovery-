@@ -1,12 +1,20 @@
 package za.ac.nwu.ac.domain.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import za.ac.nwu.ac.domain.persistence.AccountType;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
+@ApiModel(value = "AccountType",
+        description = "A DTO that represents the AccountType"
+)
 public class AccountTypeDto implements Serializable {
+
+
 
     private String mnemonic;
     private String accountTypeName;
@@ -27,6 +35,13 @@ public class AccountTypeDto implements Serializable {
         this.setMnemonic(accountType.getMnemonic());
     }
 
+    @ApiModelProperty(position = 1,
+            value = "AccountType Mnemonic",
+            name = "Mnemonic",
+            notes = "Uniquely identifies the account type",
+            dataType = "java.lang.String",
+            example = "MILES",
+            required = true)
     public String getMnemonic() {
         return mnemonic;
     }
@@ -35,6 +50,13 @@ public class AccountTypeDto implements Serializable {
         this.mnemonic = mnemonic;
     }
 
+    @ApiModelProperty(position = 2,
+            value = "AccountType Name",
+            name = "Name",
+            notes = "The name of the AccountType",
+            dataType = "java.lang.String",
+            example = "Miles",
+            required = true)
     public String getAccountTypeName() {
         return accountTypeName;
     }
@@ -43,6 +65,13 @@ public class AccountTypeDto implements Serializable {
         this.accountTypeName = accountTypeName;
     }
 
+    @ApiModelProperty(position = 3,
+            value = "AccountType Creation Date",
+            name = "CreationDate",
+            notes = "This is the date on which the AccountType was created",
+            dataType = "java.lang.String",
+            example = "2021-01-01",
+            allowEmptyValue = true)
     public LocalDate getCreationDate() {
         return creationDate;
     }
@@ -59,8 +88,22 @@ public class AccountTypeDto implements Serializable {
         return Objects.equals(mnemonic, that.mnemonic) && Objects.equals(accountTypeName, that.accountTypeName) && Objects.equals(creationDate, that.creationDate);
     }
 
+    @JsonIgnore
+    public AccountType getAccountType() {
+        return new AccountType(getMnemonic(), getAccountTypeName(), getCreationDate());
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(mnemonic, accountTypeName, creationDate);
+    }
+
+    @Override
+    public String toString() {
+        return "AccountTypeDto{" +
+                "mnemonic='" + mnemonic + '\'' +
+                ", accountTypeName='" + accountTypeName + '\'' +
+                ", creationDate=" + creationDate +
+                '}';
     }
 }
