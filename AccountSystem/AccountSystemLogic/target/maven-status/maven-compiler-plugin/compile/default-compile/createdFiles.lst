@@ -1,4 +1,5 @@
 za\ac\nwu\ac\logic\flow\FetchAccountTypeFlow.class
+za\ac\nwu\ac\logic\flow\Impl\Modulo.class
 za\ac\nwu\ac\logic\config\LogicConfig.class
 za\ac\nwu\ac\logic\flow\Impl\CreateAccountTypeFlowImpl.class
 za\ac\nwu\ac\logic\flow\Impl\FetchAccountTypeFlowImpl.class
