@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.11 s <<< FAILURE! - in za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest
+initializationError(za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Exception: No runnable methods
+
