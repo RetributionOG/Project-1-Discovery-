@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @Transactional
 @Component("createAccountTypeFlowName")
 public class CreateAccountTypeFlowImpl implements CreateAccountTypeFlow {
+
     private final AccountTypeTranslator accountTypeTranslator;
 
     public CreateAccountTypeFlowImpl(AccountTypeTranslator accountTypeTranslator) {
@@ -24,6 +25,7 @@ public class CreateAccountTypeFlowImpl implements CreateAccountTypeFlow {
         if (null == accountType.getCreationDate()) {
             accountType.setCreationDate(LocalDate.now());
         }
+        accountTypeTranslator.someMethod();
         return accountTypeTranslator.create(accountType);
     }
 }

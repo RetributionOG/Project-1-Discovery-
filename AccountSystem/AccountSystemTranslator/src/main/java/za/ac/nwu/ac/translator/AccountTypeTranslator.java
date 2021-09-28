@@ -9,5 +9,7 @@ public interface AccountTypeTranslator {
 
     AccountTypeDto create(AccountTypeDto accountType);
 
-    AccountTypeDto getAccountTypeByMnemonic(String mnemonic);
+    AccountTypeDto getAccountTypeDtoByMnemonic(String mnemonic);
+
+    void someMethod();
 }
