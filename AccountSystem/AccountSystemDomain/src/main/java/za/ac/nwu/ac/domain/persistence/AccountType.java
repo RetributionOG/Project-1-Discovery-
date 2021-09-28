@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "DEMO_ACCOUNT_TYPE", schema = "HR")
+@Table(name = "DEMO_ACCOUNT_TYPE", schema = "hr")
 public class AccountType implements Serializable {
 
     private Long accountTypeId;
@@ -15,7 +15,7 @@ public class AccountType implements Serializable {
     private String accountTypeName;
     private LocalDate creationDate;
 
-    private Set<AccountTransactions> accountTransactions;
+    private Set<AccountTransaction> accountTransactions;
 
     public AccountType() {
     }
@@ -28,6 +28,9 @@ public class AccountType implements Serializable {
     }
 
     public AccountType(String mnemonic, String accountTypeName, LocalDate creationDate) {
+        this.mnemonic = mnemonic;
+        this.accountTypeName = accountTypeName;
+        this.creationDate = creationDate;
     }
 
     @Id
@@ -54,8 +57,8 @@ public class AccountType implements Serializable {
         return creationDate;
     }
 
-    @OneToMany(targetEntity = AccountTransactions.class, fetch = FetchType.LAZY, mappedBy = "accountType", orphanRemoval = true, cascade = CascadeType.PERSIST)
-    public Set<AccountTransactions> getAccountTransactions() {
+    @OneToMany(targetEntity = AccountTransaction.class, fetch = FetchType.LAZY, mappedBy = "accountType", orphanRemoval = true, cascade = CascadeType.PERSIST)
+    public Set<AccountTransaction> getAccountTransactions() {
         return accountTransactions;
     }
 
@@ -98,7 +101,7 @@ public class AccountType implements Serializable {
                 '}';
     }
 
-    public AccountType(Long accountTypeId, String mnemonic, String accountTypeName, LocalDate creationDate, Set<AccountTransactions> accountTransactions) {
+    public AccountType(Long accountTypeId, String mnemonic, String accountTypeName, LocalDate creationDate, Set<AccountTransaction> accountTransactions) {
         this.accountTypeId = accountTypeId;
         this.mnemonic = mnemonic;
         this.accountTypeName = accountTypeName;
@@ -106,7 +109,7 @@ public class AccountType implements Serializable {
         this.accountTransactions = accountTransactions;
     }
 
-    public void setAccountTransactions(Set<AccountTransactions> accountTransactions) {
+    public void setAccountTransactions(Set<AccountTransaction> accountTransactions) {
         this.accountTransactions = accountTransactions;
     }
 }
