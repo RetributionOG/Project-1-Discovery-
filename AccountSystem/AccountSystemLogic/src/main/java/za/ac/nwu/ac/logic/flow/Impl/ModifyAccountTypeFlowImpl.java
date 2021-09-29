@@ -1,14 +1,16 @@
 package za.ac.nwu.ac.logic.flow.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import za.ac.nwu.ac.domain.dto.AccountTypeDto;
 import za.ac.nwu.ac.logic.flow.ModifyAccountTypeFlow;
 import za.ac.nwu.ac.translator.AccountTypeTranslator;
 
-
+import javax.transaction.Transactional;
 import java.time.LocalDate;
-import java.util.List;
 
+@Transactional
+@Component("modifyAccountTypeFlowName")
 public class ModifyAccountTypeFlowImpl implements ModifyAccountTypeFlow {
 
     private final AccountTypeTranslator accountTypeTranslator;
@@ -26,5 +28,9 @@ public class ModifyAccountTypeFlowImpl implements ModifyAccountTypeFlow {
     @Override
     public AccountTypeDto updateAccountType(String mnemonic, String newAccountTypeName, LocalDate newCreationDate) {
         return accountTypeTranslator.updateAccountType(mnemonic, newAccountTypeName, newCreationDate);
+    }
+
+    public boolean methodToTest() {
+        return true;
     }
 }

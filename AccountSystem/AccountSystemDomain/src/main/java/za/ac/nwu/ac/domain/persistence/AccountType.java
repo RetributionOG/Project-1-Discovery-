@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "DEMO_ACCOUNT_TYPE", schema = "hr")
+@Table(name = "DEMO_ACCOUNT_TYPE", schema = "HR")
 public class AccountType implements Serializable {
 
     private Long accountTypeId;
