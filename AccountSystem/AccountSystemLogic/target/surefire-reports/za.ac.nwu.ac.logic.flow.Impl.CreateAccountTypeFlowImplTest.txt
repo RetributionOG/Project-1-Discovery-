@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImplTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.517 s <<< FAILURE! - in za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImplTest
-create(za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImplTest)  Time elapsed: 0.051 s  <<< FAILURE!
-org.mockito.exceptions.verification.NeverWantedButInvoked: 
-
-translator.create(
-    <any za.ac.nwu.ac.domain.dto.AccountTypeDto>
-);
-Never wanted here:
--> at za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImplTest.create(CreateAccountTypeFlowImplTest.java:47)
-But invoked here:
--> at za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImpl.create(CreateAccountTypeFlowImpl.java:28)
-
-	at za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImplTest.create(CreateAccountTypeFlowImplTest.java:47)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.783 s - in za.ac.nwu.ac.logic.flow.Impl.CreateAccountTypeFlowImplTest
