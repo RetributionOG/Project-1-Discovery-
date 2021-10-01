@@ -126,4 +126,36 @@ public class AccountTypeControllerTest {
         AccountTypeDto accountType = new AccountTypeDto("PLAY", "The new Play account type name",
                 LocalDate.parse("2021-04-01"));
     }
+
+    @Test
+    public void updateAccountTypeWithNoOptionalDate() throws Exception {
+        String expectedResponse = "{\"successful\":true,\"payload\":" +
+                "{\"mnemonic\":\"PLAY\",\"accountTypeName\":\"The new Play account type name\",\"creationDate\":[2021,9,1]}}";
+        AccountTypeDto accountType = new AccountTypeDto("PLAY", "The new Play account type name",
+                LocalDate.parse("2021-09-01"));
+        when(modifyAccountTypeFlow.updateAccountType(anyString(), anyString(), isNull())).thenReturn(accountType);
+        MvcResult mvcResult = mockMvc.perform(put((String.format("%s/%s", ACCOUNT_TYPE_CONTROLLER_URL, "PLAY")))
+                        .param("newAccountTypeName", "The new Play account type name")
+                        .servletPath(APP_URL)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andReturn();
+        verify(modifyAccountTypeFlow, times(1)).updateAccountType(eq("PLAY"), eq("The new Play account type name"), eq(null));
+        assertEquals(expectedResponse, mvcResult.getResponse().getContentAsString());
+    }
+
+    @Test
+    public void updateAccountTypeObitMandatory() throws Exception {
+        mockMvc.perform(put((String.format("%s/%s",
+                        ACCOUNT_TYPE_CONTROLLER_URL, "PLAY")))
+                        .servletPath(APP_URL)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+        verify(modifyAccountTypeFlow, never()).updateAccountType(anyString(), anyString(), any(LocalDate.class));
+        verify(modifyAccountTypeFlow, never()).updateAccountType(anyString(), anyString(), isNull());
+        verify(modifyAccountTypeFlow, never()).updateAccountType(anyString(), isNull(), isNull());
+    }
 }

@@ -77,7 +77,7 @@ public class AccountTypeController
                     name = "mnemonic",
                     required = true)
             @PathVariable("mnemonic") final String mnemonic) {
-        AccountTypeDto accountType = fetchAccountTypeFlow.getAccountTypeDtoByMnemonic(mnemonic);
+        AccountTypeDto accountType = fetchAccountTypeFlow.getAccountTypeByMnemonic(mnemonic);
         GeneralResponse<AccountTypeDto> response = new GeneralResponse<>(true, accountType);
         return new ResponseEntity(response, HttpStatus.OK);
     }
