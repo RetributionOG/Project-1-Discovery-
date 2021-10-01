@@ -53,7 +53,7 @@ public class AccountTypeTranslatorImpl implements AccountTypeTranslator {
             AccountType accountType = accountTypeRepository.getAccountTypeByMnemonic(mnemonic);
             return new AccountTypeDto(accountType);
         } catch (Exception e) {
-            throw new RuntimeException("unable to read from the DB", e);
+            throw new RuntimeException("Unable to read from the DB", e);
         }
     }
 
