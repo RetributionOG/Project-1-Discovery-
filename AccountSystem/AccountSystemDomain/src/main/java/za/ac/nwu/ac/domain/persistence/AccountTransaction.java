@@ -6,15 +6,19 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 
+
 @Entity
-@Table(name = "DEMO_ACCOUNT_TYPE", schema = "hr")
+@Table(name = "DEMO_ACCOUNT_TX", schema = "hr")
 public class AccountTransaction implements Serializable {
+
 
     private Long transactionId;
     private AccountType accountType;
     private Long memberId;
     private Long amount;
     private LocalDate transactionDate;
+
+    private AccountTransactionDetails details;
 
     public AccountTransaction() {
     }
@@ -28,33 +32,40 @@ public class AccountTransaction implements Serializable {
     }
 
 
+
     @Id
     @SequenceGenerator(name = "DEMO_ACCOUNT_TX_SEQ", sequenceName = "HR.DEMO_ACCOUNT_TX_SEQ", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "DEMO_ACCOUNT_TX_SEQ")
 
     @Column(name = "TX_ID")
-    private Long getTransactionId(){
+    public Long getTransactionId(){
         return transactionId;
     }
 
     @Column(name = "MEMBER_ID")
-    private Long getMemberId(){
+    public Long getMemberId(){
         return memberId;
     }
 
     @Column(name = "AMOUNT")
-    private Long getAmount(){
+    public Long getAmount(){
         return amount;
     }
+
     @Column(name = "TX_DATE")
-    private LocalDate getTransactionDate(){
+    public LocalDate getTransactionDate(){
         return transactionDate;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ACCOUNT_TYPE_ID")
-    private AccountType getAccountType(){
+    public AccountType getAccountType(){
         return accountType;
+    }
+
+    @OneToOne(targetEntity = AccountTransactionDetails.class, fetch = FetchType.LAZY, mappedBy = "accountTransaction") //, orphanRemoval = true, cascade = CascadeType.PERSIST
+    public AccountTransactionDetails getDetails(){
+        return details;
     }
 
     public void setTransactionId(Long transactionId){
@@ -95,5 +106,10 @@ public class AccountTransaction implements Serializable {
                 ", transactionDate=" + transactionDate +
                 '}';
     }
+
+    public void setDetails(AccountTransactionDetails details) {
+        this.details = details;
+    }
+
 }
 
