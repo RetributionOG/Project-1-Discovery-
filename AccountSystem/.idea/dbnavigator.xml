@@ -24,10 +24,14 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="6473d59f-164a-4282-839d-04d235e0aede">
+        <schema name="HR" object-types="table, view, materialized view, synonym, sequence, procedure, function, package, type, database trigger, dimension, cluster, dblink" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="d72c655b-1717-4011-80bd-1ba1ef8a6ca2">
+    <connection id="6473d59f-164a-4282-839d-04d235e0aede">
       <console name="Account_System_DB" type="STANDARD" schema="HR" session="Main" />
     </connection>
   </component>
@@ -35,10 +39,7 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="d72c655b-1717-4011-80bd-1ba1ef8a6ca2" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="d72c655b-1717-4011-80bd-1ba1ef8a6ca2" dataset="HR.DEMO_ACCOUNT_TYPE" active-filter-id="" />
+    <connection id="6473d59f-164a-4282-839d-04d235e0aede" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -66,7 +67,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="d72c655b-1717-4011-80bd-1ba1ef8a6ca2" active="true">
+      <connection id="6473d59f-164a-4282-839d-04d235e0aede" active="true">
         <database>
           <name value="Account_System_DB" />
           <description value="" />
