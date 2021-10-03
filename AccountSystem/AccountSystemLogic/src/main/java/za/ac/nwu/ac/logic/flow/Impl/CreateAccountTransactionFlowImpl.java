@@ -34,7 +34,7 @@ public class CreateAccountTransactionFlowImpl implements CreateAccountTransactio
     @Override
     public AccountTransactionDto create(AccountTransactionDto accountTransactionDto) {
 
-        if (LOGGER.isInfoEnabled()) {
+        if (LOGGER.isDebugEnabled()) {
 
             String outputForLogging = "null";
 
