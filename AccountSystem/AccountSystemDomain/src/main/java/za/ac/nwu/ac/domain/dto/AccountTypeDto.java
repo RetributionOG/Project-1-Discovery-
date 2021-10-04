@@ -14,8 +14,6 @@ import java.util.Objects;
 )
 public class AccountTypeDto implements Serializable {
 
-
-
     private String mnemonic;
     private String accountTypeName;
     private LocalDate creationDate;

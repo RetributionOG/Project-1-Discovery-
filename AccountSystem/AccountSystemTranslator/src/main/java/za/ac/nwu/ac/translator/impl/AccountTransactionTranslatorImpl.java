@@ -22,7 +22,7 @@ public class AccountTransactionTranslatorImpl  implements AccountTransactionTran
         try {
             return repo.save(accountTransaction);
         }catch (Exception e) {
-            throw new RuntimeException("unable to save to the DB", e);
+            throw new RuntimeException("Unable to save to the DB", e);
         }
     }
 
@@ -43,7 +43,7 @@ public class AccountTransactionTranslatorImpl  implements AccountTransactionTran
         try {
             return repo.findById(transactionId).orElse(null);
         }catch (Exception e) {
-            throw new RuntimeException("unable to save to the DB", e);
+            throw new RuntimeException("Unable to save to the DB", e);
         }
     }
 
