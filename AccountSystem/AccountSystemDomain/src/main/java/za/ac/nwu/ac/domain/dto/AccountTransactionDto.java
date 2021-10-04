@@ -33,7 +33,7 @@ public class AccountTransactionDto implements Serializable{
         this.transactionDate = transactionDate;
     }
 
-    public AccountTransactionDto(Long memberId, Long amount, LocalDate transactionDate, Long accountTypeId) {
+    public AccountTransactionDto(Long memberId, Long amount, Long accountTypeId, LocalDate transactionDate) {
         this.memberId = memberId;
         this.amount = amount;
         this.transactionDate = transactionDate;
@@ -120,7 +120,7 @@ public class AccountTransactionDto implements Serializable{
     @JsonIgnore
     public AccountTransaction getTransactionType()
     {
-        return new AccountTransaction(getMemberId(), getAmount(),getTransactionDate());
+        return new AccountTransaction(getAccountTypeId(), getMemberId(), getAmount(),getTransactionDate());
     }
 
     @Override
