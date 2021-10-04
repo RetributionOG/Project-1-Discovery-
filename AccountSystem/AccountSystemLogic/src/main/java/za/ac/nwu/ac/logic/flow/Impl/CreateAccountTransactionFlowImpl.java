@@ -1,7 +1,5 @@
 package za.ac.nwu.ac.logic.flow.Impl;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import za.ac.nwu.ac.domain.dto.AccountTransactionDto;
 import za.ac.nwu.ac.logic.flow.CreateAccountTransactionFlow;
 import za.ac.nwu.ac.translator.AccountTransactionTranslator;

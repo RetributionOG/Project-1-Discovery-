@@ -49,7 +49,7 @@ public class AccountTransactionDto implements Serializable{
     }
 
     @ApiModelProperty(position = 1,
-            value = "AccountTransaction memberId",
+            value = "AccountTransaction MemberId",
             name = "MemberId",
             notes = "Uniquely identifies the member",
             dataType = "java.lang.String",

@@ -21,7 +21,6 @@ public class AccountTransaction implements Serializable {
     }
 
     public AccountTransaction(Long memberId, Long amount, LocalDate transactionDate) {
-        this.accountTypeId = accountTypeId;
         this.memberId = memberId;
         this.amount = amount;
         this.transactionDate = transactionDate;
@@ -33,8 +32,6 @@ public class AccountTransaction implements Serializable {
         this.amount = amount;
         this.transactionDate = transactionDate;
     }
-
-
 
     @Id
     @SequenceGenerator(name = "DEMO_ACCOUNT_TX_SEQ", sequenceName = "HR.DEMO_ACCOUNT_TX_SEQ", allocationSize = 1)
