@@ -5,11 +5,11 @@ import za.ac.nwu.ac.domain.dto.AccountTransactionDto;
 import java.util.List;
 
 public interface AccountTransactionTranslator {
-    AccountTransaction save(AccountTransaction accountTransaction);
+    AccountTransactionDto save(AccountTransactionDto accountTransaction);
 
-    List<AccountTransaction> getAllAccountTransactions();
+    List<AccountTransactionDto> getAllAccountTransactions();
 
-    AccountTransaction getAccountTransactionByPk(Long transactionId);
+    AccountTransactionDto create(AccountTransactionDto accountTransaction);
 
-    AccountTransactionDto getAccountTypeDbEntityByMnemonic(String mnemonic);
+    AccountTransactionDto getAccountTransactionDtoByMemberId(Long memberId);
 }

@@ -18,9 +18,13 @@ public class AccountTransaction implements Serializable {
     private Long amount;
     private LocalDate transactionDate;
 
-    private AccountTransactionDetails details;
+    public AccountTransaction(Long memberId, Long amount, LocalDate transactionDate, AccountType accountTypeId) {
+    }
 
-    public AccountTransaction() {
+    public AccountTransaction(Long memberId, Long amount, LocalDate transactionDate) {
+        this.memberId = memberId;
+        this.amount = amount;
+        this.transactionDate = transactionDate;
     }
 
     public AccountTransaction(Long transactionId, AccountType accountType, Long memberId, Long amount, LocalDate transactionDate){
@@ -31,13 +35,11 @@ public class AccountTransaction implements Serializable {
         this.transactionDate = transactionDate;
     }
 
-
-
     @Id
     @SequenceGenerator(name = "DEMO_ACCOUNT_TX_SEQ", sequenceName = "HR.DEMO_ACCOUNT_TX_SEQ", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "DEMO_ACCOUNT_TX_SEQ")
 
-    @Column(name = "TX_ID")
+    @Column(name = "ACCOUNT_TX_ID")
     public Long getTransactionId(){
         return transactionId;
     }
@@ -61,11 +63,6 @@ public class AccountTransaction implements Serializable {
     @JoinColumn(name = "ACCOUNT_TYPE_ID")
     public AccountType getAccountType(){
         return accountType;
-    }
-
-    @OneToOne(targetEntity = AccountTransactionDetails.class, fetch = FetchType.LAZY, mappedBy = "accountTransaction") //, orphanRemoval = true, cascade = CascadeType.PERSIST
-    public AccountTransactionDetails getDetails(){
-        return details;
     }
 
     public void setTransactionId(Long transactionId){
@@ -106,10 +103,5 @@ public class AccountTransaction implements Serializable {
                 ", transactionDate=" + transactionDate +
                 '}';
     }
-
-    public void setDetails(AccountTransactionDetails details) {
-        this.details = details;
-    }
-
 }
 
