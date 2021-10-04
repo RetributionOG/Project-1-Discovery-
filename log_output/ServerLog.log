@@ -1,0 +1,292 @@
+{ "date" : "04-10-2021 14:13:13.414", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:13:13.488", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 57ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:13:13.861", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81bd4cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:13:14.199", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:13:14.351", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1944 ms }
+{ "date" : "04-10-2021 14:13:14.496", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:13:15.789", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:13:16.065", "level" : "WARN ", "class" : "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext", " Log" :
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountTransactionController' defined in file [D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes\za\ac\nwu\ac\web\sb\controller\AccountTransactionController.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} }
+{ "date" : "04-10-2021 14:13:16.065", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:13:16.082", "level" : "INFO ", "class" : "o.s.b.a.l.ConditionEvaluationReportLoggingListener", " Log" :
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. }
+{ "date" : "04-10-2021 14:13:16.148", "level" : "ERROR", "class" : "o.s.b.d.LoggingFailureAnalysisReporter", " Log" :
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in za.ac.nwu.ac.web.sb.controller.AccountTransactionController required a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' in your configuration.
+ }
+{ "date" : "04-10-2021 14:16:10.784", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:16:10.833", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 42ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:16:11.146", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$144bb50b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:16:11.430", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:16:11.561", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1269 ms }
+{ "date" : "04-10-2021 14:16:11.694", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:16:12.855", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:16:13.243", "level" : "WARN ", "class" : "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext", " Log" :
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountTransactionController' defined in file [D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes\za\ac\nwu\ac\web\sb\controller\AccountTransactionController.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} }
+{ "date" : "04-10-2021 14:16:13.244", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:16:13.257", "level" : "INFO ", "class" : "o.s.b.a.l.ConditionEvaluationReportLoggingListener", " Log" :
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. }
+{ "date" : "04-10-2021 14:16:13.308", "level" : "ERROR", "class" : "o.s.b.d.LoggingFailureAnalysisReporter", " Log" :
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in za.ac.nwu.ac.web.sb.controller.AccountTransactionController required a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' in your configuration.
+ }
+{ "date" : "04-10-2021 14:17:46.321", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:17:46.372", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 44ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:17:46.701", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6b37ea2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:17:46.995", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:17:47.127", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1304 ms }
+{ "date" : "04-10-2021 14:17:47.269", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:17:48.688", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:17:48.966", "level" : "WARN ", "class" : "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext", " Log" :
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountTransactionController' defined in file [D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes\za\ac\nwu\ac\web\sb\controller\AccountTransactionController.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} }
+{ "date" : "04-10-2021 14:17:48.966", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:17:48.980", "level" : "INFO ", "class" : "o.s.b.a.l.ConditionEvaluationReportLoggingListener", " Log" :
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. }
+{ "date" : "04-10-2021 14:17:49.030", "level" : "ERROR", "class" : "o.s.b.d.LoggingFailureAnalysisReporter", " Log" :
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in za.ac.nwu.ac.web.sb.controller.AccountTransactionController required a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' in your configuration.
+ }
+{ "date" : "04-10-2021 14:18:03.638", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:18:03.689", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 43ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:18:04.003", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a57bee3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:18:04.293", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:18:04.425", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1259 ms }
+{ "date" : "04-10-2021 14:18:04.547", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:18:05.832", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:18:05.843", "level" : "WARN ", "class" : "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext", " Log" :
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountTransactionController' defined in file [D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes\za\ac\nwu\ac\web\sb\controller\AccountTransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'createAccountTransactionFlowImpl' defined in file [D:\DO\nwu\AccountSystem\AccountSystemLogic\target\classes\za\ac\nwu\ac\logic\flow\Impl\CreateAccountTransactionFlowImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'za.ac.nwu.ac.translator.AccountTransactionTranslator' available: expected single matching bean but found 2: modifyAccountTransactionFlowImpl,accountTransactionTranslatorImpl }
+{ "date" : "04-10-2021 14:18:05.843", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:18:05.857", "level" : "INFO ", "class" : "o.s.b.a.l.ConditionEvaluationReportLoggingListener", " Log" :
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. }
+{ "date" : "04-10-2021 14:18:05.858", "level" : "ERROR", "class" : "o.s.b.d.LoggingFailureAnalysisReporter", " Log" :
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in za.ac.nwu.ac.logic.flow.Impl.CreateAccountTransactionFlowImpl required a single bean, but 2 were found:
+	- modifyAccountTransactionFlowImpl: defined in file [D:\DO\nwu\AccountSystem\AccountSystemLogic\target\classes\za\ac\nwu\ac\logic\flow\Impl\ModifyAccountTransactionFlowImpl.class]
+	- accountTransactionTranslatorImpl: defined in file [D:\DO\nwu\AccountSystem\AccountSystemTranslator\target\classes\za\ac\nwu\ac\translator\impl\AccountTransactionTranslatorImpl.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+ }
+{ "date" : "04-10-2021 14:20:15.885", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:20:15.935", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 42ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:20:16.246", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a51acab3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:20:16.530", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:20:16.671", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1278 ms }
+{ "date" : "04-10-2021 14:20:16.796", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:20:18.077", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:20:18.339", "level" : "WARN ", "class" : "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext", " Log" :
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountTransactionController' defined in file [D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes\za\ac\nwu\ac\web\sb\controller\AccountTransactionController.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} }
+{ "date" : "04-10-2021 14:20:18.340", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:20:18.353", "level" : "INFO ", "class" : "o.s.b.a.l.ConditionEvaluationReportLoggingListener", " Log" :
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. }
+{ "date" : "04-10-2021 14:20:18.405", "level" : "ERROR", "class" : "o.s.b.d.LoggingFailureAnalysisReporter", " Log" :
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in za.ac.nwu.ac.web.sb.controller.AccountTransactionController required a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'za.ac.nwu.ac.logic.flow.ModifyAccountTransactionFlow' in your configuration.
+ }
+{ "date" : "04-10-2021 14:21:28.373", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:21:28.423", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 43ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:21:28.731", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ef50b17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:21:29.025", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:21:29.153", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1258 ms }
+{ "date" : "04-10-2021 14:21:29.270", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:21:30.426", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:21:30.919", "level" : "WARN ", "class" : "o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration", " Log" :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning }
+{ "date" : "04-10-2021 14:21:31.124", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Initializing ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:21:31.409", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat started on port(s): 8090 (http) with context path '/account-system' }
+{ "date" : "04-10-2021 14:21:34.731", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Shutting down ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:21:34.733", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:25:52.799", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:25:52.849", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 43ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:25:53.168", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba36bfff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:25:53.459", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:25:53.586", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1321 ms }
+{ "date" : "04-10-2021 14:25:53.707", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:25:54.841", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:25:55.350", "level" : "WARN ", "class" : "o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration", " Log" :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning }
+{ "date" : "04-10-2021 14:25:55.564", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Initializing ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:25:55.843", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat started on port(s): 8090 (http) with context path '/account-system' }
+{ "date" : "04-10-2021 14:26:10.980", "level" : "INFO ", "class" : "o.s.web.servlet.DispatcherServlet", " Log" :
+                Initializing Servlet 'dispatcherServlet' }
+{ "date" : "04-10-2021 14:26:10.985", "level" : "INFO ", "class" : "o.s.web.servlet.DispatcherServlet", " Log" :
+                Completed initialization in 5 ms }
+{ "date" : "04-10-2021 14:29:21.789", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Shutting down ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:29:21.791", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:31:14.942", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:31:14.993", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 42ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:31:15.307", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9b0ba80f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:31:15.601", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:31:15.736", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1275 ms }
+{ "date" : "04-10-2021 14:31:15.855", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:31:17.001", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:31:17.498", "level" : "WARN ", "class" : "o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration", " Log" :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning }
+{ "date" : "04-10-2021 14:31:17.693", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Initializing ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:31:17.978", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat started on port(s): 8090 (http) with context path '/account-system' }
+{ "date" : "04-10-2021 14:32:16.249", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Shutting down ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:32:16.251", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:32:20.413", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Bootstrapping Spring Data repositories in DEFAULT mode. }
+{ "date" : "04-10-2021 14:32:20.462", "level" : "INFO ", "class" : "o.s.d.r.c.RepositoryConfigurationDelegate", " Log" :
+                Finished Spring Data repository scanning in 43ms. Found 3 repository interfaces. }
+{ "date" : "04-10-2021 14:32:20.775", "level" : "INFO ", "class" : "o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker", " Log" :
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e152606d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) }
+{ "date" : "04-10-2021 14:32:21.059", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat initialized with port(s): 8090 (http) }
+{ "date" : "04-10-2021 14:32:21.188", "level" : "INFO ", "class" : "o.s.web.context.ContextLoader", " Log" :
+                Root WebApplicationContext: initialization completed in 1248 ms }
+{ "date" : "04-10-2021 14:32:21.305", "level" : "WARN ", "class" : "c.z.hikari.util.DriverDataSource", " Log" :
+                Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation. }
+{ "date" : "04-10-2021 14:32:22.471", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Initialized JPA EntityManagerFactory for persistence unit 'default' }
+{ "date" : "04-10-2021 14:32:23.005", "level" : "WARN ", "class" : "o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration", " Log" :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning }
+{ "date" : "04-10-2021 14:32:23.244", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Initializing ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:32:23.547", "level" : "INFO ", "class" : "o.s.b.w.e.tomcat.TomcatWebServer", " Log" :
+                Tomcat started on port(s): 8090 (http) with context path '/account-system' }
+{ "date" : "04-10-2021 14:32:36.960", "level" : "INFO ", "class" : "o.s.s.c.ThreadPoolTaskExecutor", " Log" :
+                Shutting down ExecutorService 'applicationTaskExecutor' }
+{ "date" : "04-10-2021 14:32:36.963", "level" : "INFO ", "class" : "o.s.o.j.LocalContainerEntityManagerFactoryBean", " Log" :
+                Closing JPA EntityManagerFactory for persistence unit 'default' }

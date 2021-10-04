@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1.166 s <<< FAILURE! - in za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest
+create(za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest)  Time elapsed: 0.564 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<404>
+	at za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest.create(AccountTypeControllerTest.java:96)
+
+getAll(za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest.getAll(AccountTypeControllerTest.java:73)
+
+updateAccountTypeObitMandatory(za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest)  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest.updateAccountTypeObitMandatory(AccountTypeControllerTest.java:155)
+
+updateAccountTypeWithNoOptionalDate(za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest.updateAccountTypeWithNoOptionalDate(AccountTypeControllerTest.java:142)
+
+deleteAccountType(za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at za.ac.nwu.ac.web.sb.controller.AccountTypeControllerTest.deleteAccountType(AccountTypeControllerTest.java:115)
+

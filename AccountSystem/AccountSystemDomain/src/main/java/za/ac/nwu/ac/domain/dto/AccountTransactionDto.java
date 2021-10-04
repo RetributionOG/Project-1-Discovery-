@@ -57,6 +57,7 @@ public class AccountTransactionDto implements Serializable {
     }
 
 
+
     public Long getTransactionId() {
         return transactionId;
     }
@@ -109,10 +110,21 @@ public class AccountTransactionDto implements Serializable {
     }
 
     @Override
-    public int hashCode(){
-        return 1;
+    public int hashCode() {
+        return Objects.hash(transactionId, accountTypeMnemonic, memberId, amount, transactionDate, details);
     }
 
+    @Override
+    public String toString() {
+        return "AccountTransactionDto{" +
+                "transactionId=" + transactionId +
+                ", accountTypeMnemonic='" + accountTypeMnemonic + '\'' +
+                ", memberId=" + memberId +
+                ", amount=" + amount +
+                ", transactionDate=" + transactionDate +
+                ", details=" + details +
+                '}';
+    }
 
     public AccountTransactionDetailsDto getDetails() {
         return details;
