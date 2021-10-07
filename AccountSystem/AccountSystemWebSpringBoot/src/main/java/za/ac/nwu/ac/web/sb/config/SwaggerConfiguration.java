@@ -22,13 +22,13 @@ import java.util.List;
 @Import(springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration.class)
 public class SwaggerConfiguration {
     @Value("${swagger.application.version}")
-    private String applicationVersion;
+    private String applicationVersion = "V1.8";
 
     @Value("${swagger.application.name}")
-    private String applicationName;
+    private String applicationName = "Account System";
 
     @Value("${swagger.application.description}")
-    private String applicationDescription;
+    private String applicationDescription = "Add, view or subtract Miles (or whatever currency people are using) to a members account";
 
     @Bean
     public Docket api() {

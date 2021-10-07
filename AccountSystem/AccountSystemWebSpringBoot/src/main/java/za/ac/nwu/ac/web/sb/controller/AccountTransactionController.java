@@ -34,7 +34,7 @@ public class AccountTransactionController {
     }
 
     @PostMapping("")
-    @ApiOperation(value = "Creates a new AccountTransaction.", notes = "Creates a new AccountTransaction in the DB.")
+    @ApiOperation(value = "Makes changes to the specified Member ID account.", notes = "Add or subtracts the specified amount of points from the member ID.")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "The AccountTransaction was created successfully", response = GeneralResponse.class),
             @ApiResponse(code = 400, message = "Bad Request", response = GeneralResponse.class),
@@ -52,19 +52,6 @@ public class AccountTransactionController {
         return generalResponseResponseEntity;
     }
 
-    @GetMapping("/all")
-    @ApiOperation(value = "Gets all the configured Account types.", notes = "Returns a list of Account types")
-    @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Account types returned", response = GeneralResponse.class),
-            @ApiResponse(code = 400, message = "Bad Request", response = GeneralResponse.class),
-            @ApiResponse(code = 404, message = "Not Found", response = GeneralResponse.class),
-            @ApiResponse(code = 500, message = "Internal Server Error", response = GeneralResponse.class)})
-    public ResponseEntity<GeneralResponse<List<AccountTransactionDto>>> getAll(){
-        List<AccountTransactionDto> accountTransactions = fetchAccountTransactionFlow.getAllTransactionTypes();
-        GeneralResponse<List<AccountTransactionDto>> response = new GeneralResponse<>(true, accountTransactions);
-        return new ResponseEntity<>(response, HttpStatus.OK);
-    }
-
     @GetMapping("/{memberId}")
     @ApiOperation(value = "Fetches the specified AccountTransaction.", notes = "Fetches the AccountTransaction corresponding to the given transactionId")
     @ApiResponses(value = {
@@ -74,7 +61,7 @@ public class AccountTransactionController {
             @ApiResponse(code = 500, message = "Internal Server Error", response = GeneralResponse.class)})
     public ResponseEntity<GeneralResponse<AccountTransactionDto>> getAccountTransaction(
             @ApiParam(value = "The Member ID that uniquely identifies the AccountTransaction.",
-                    example = "50002",
+                    example = "40",
                     name = "memberId",
                     required = true)
             @PathVariable("memberId") final Long memberId) {

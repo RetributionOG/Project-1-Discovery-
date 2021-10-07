@@ -11,7 +11,6 @@ public class AccountTransaction implements Serializable {
 
 
     private Long transactionId;
-//    private AccountType accountType;
     private Long accountTypeId;
     private Long memberId;
     private Long amount;
@@ -20,21 +19,12 @@ public class AccountTransaction implements Serializable {
     public AccountTransaction() {
     }
 
-    public AccountTransaction(Long memberId, Long amount, LocalDate transactionDate) {
-        this.accountTypeId = accountTypeId;
-        this.memberId = memberId;
-        this.amount = amount;
-        this.transactionDate = transactionDate;
-    }
-
     public AccountTransaction(Long accountTypeId, Long memberId, Long amount, LocalDate transactionDate){
         this.accountTypeId = accountTypeId;
         this.memberId = memberId;
         this.amount = amount;
         this.transactionDate = transactionDate;
     }
-
-
 
     @Id
     @SequenceGenerator(name = "DEMO_ACCOUNT_TX_SEQ", sequenceName = "HR.DEMO_ACCOUNT_TX_SEQ", allocationSize = 1)
@@ -69,12 +59,6 @@ public class AccountTransaction implements Serializable {
         return transactionDate;
     }
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "ACCOUNT_TYPE_ID")
-//    public AccountType getAccountType(){
-//        return accountType;
-//    }
-
     public void setTransactionId(Long transactionId){
         this.transactionId = transactionId;
     }
@@ -87,10 +71,6 @@ public class AccountTransaction implements Serializable {
     public void setTransactionDate(LocalDate transactionDate) {
         this.transactionDate = transactionDate;
     }
-//    public void setAccountType(AccountType accountType) {
-//        this.accountType = accountType;
-//    }
-
 
     @Override
     public boolean equals(Object o) {
@@ -108,7 +88,7 @@ public class AccountTransaction implements Serializable {
     @Override
     public String toString() {
         return "AccountTransaction{" +
-                "transactionId=" + transactionId +
+                "accountTypeId=" + accountTypeId +
                 ", memberId=" + memberId +
                 ", amount=" + amount +
                 ", transactionDate=" + transactionDate +

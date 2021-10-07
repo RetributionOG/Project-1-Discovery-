@@ -59,7 +59,6 @@ public class AccountTypeTranslatorImpl implements AccountTypeTranslator {
 
     @Override
     public void someMethod() {
-
     }
 
     @Override
