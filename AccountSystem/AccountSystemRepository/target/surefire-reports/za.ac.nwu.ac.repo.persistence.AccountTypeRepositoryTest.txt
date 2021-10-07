@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.277 s <<< FAILURE! - in za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest
-getAccountTypeDtoByMnemonicPlay(za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountTransactionRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract za.ac.nwu.ac.domain.dto.AccountTransactionDto za.ac.nwu.ac.repo.persistence.AccountTransactionRepository.getAccountTransactionDtoByMnemonic(java.lang.Long)!
-Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract za.ac.nwu.ac.domain.dto.AccountTransactionDto za.ac.nwu.ac.repo.persistence.AccountTransactionRepository.getAccountTransactionDtoByMnemonic(java.lang.Long)!
-Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped [SELECT new za.ac.nwu.ac.domain.dto.AccountTransactionsDto(         at.memberId,        at.amount,        at.transactionDate )    FROM         AcountTransaction at    WHERE at.memberId = :memberId]
-Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped [SELECT new za.ac.nwu.ac.domain.dto.AccountTransactionsDto(         at.memberId,        at.amount,        at.transactionDate )    FROM         AcountTransaction at    WHERE at.memberId = :memberId]
-Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped
-
-getAccountTypeDtoByMnemonic(za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountTransactionRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract za.ac.nwu.ac.domain.dto.AccountTransactionDto za.ac.nwu.ac.repo.persistence.AccountTransactionRepository.getAccountTransactionDtoByMnemonic(java.lang.Long)!
-Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract za.ac.nwu.ac.domain.dto.AccountTransactionDto za.ac.nwu.ac.repo.persistence.AccountTransactionRepository.getAccountTransactionDtoByMnemonic(java.lang.Long)!
-Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped [SELECT new za.ac.nwu.ac.domain.dto.AccountTransactionsDto(         at.memberId,        at.amount,        at.transactionDate )    FROM         AcountTransaction at    WHERE at.memberId = :memberId]
-Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped [SELECT new za.ac.nwu.ac.domain.dto.AccountTransactionsDto(         at.memberId,        at.amount,        at.transactionDate )    FROM         AcountTransaction at    WHERE at.memberId = :memberId]
-Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped
-
-getAccountTypeDtoByMnemonicMiles(za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountTransactionRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract za.ac.nwu.ac.domain.dto.AccountTransactionDto za.ac.nwu.ac.repo.persistence.AccountTransactionRepository.getAccountTransactionDtoByMnemonic(java.lang.Long)!
-Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract za.ac.nwu.ac.domain.dto.AccountTransactionDto za.ac.nwu.ac.repo.persistence.AccountTransactionRepository.getAccountTransactionDtoByMnemonic(java.lang.Long)!
-Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped [SELECT new za.ac.nwu.ac.domain.dto.AccountTransactionsDto(         at.memberId,        at.amount,        at.transactionDate )    FROM         AcountTransaction at    WHERE at.memberId = :memberId]
-Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped [SELECT new za.ac.nwu.ac.domain.dto.AccountTransactionsDto(         at.memberId,        at.amount,        at.transactionDate )    FROM         AcountTransaction at    WHERE at.memberId = :memberId]
-Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AcountTransaction is not mapped
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.317 s - in za.ac.nwu.ac.repo.persistence.AccountTypeRepositoryTest

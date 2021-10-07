@@ -38,7 +38,6 @@ public class AccountTransactionTranslatorImpl implements AccountTransactionTrans
             throw new RuntimeException("Unable to read from the DB", e);
         }
         return accountTransactionDto;
-
     }
 
     @Override
@@ -50,7 +49,6 @@ public class AccountTransactionTranslatorImpl implements AccountTransactionTrans
         } catch (Exception e){
             throw new RuntimeException("Unable to save to the DB", e);
         }
-
     }
 
     @Override
@@ -62,5 +60,4 @@ public class AccountTransactionTranslatorImpl implements AccountTransactionTrans
             throw new RuntimeException("Unable to read from the DB", e);
         }
     }
-
 }

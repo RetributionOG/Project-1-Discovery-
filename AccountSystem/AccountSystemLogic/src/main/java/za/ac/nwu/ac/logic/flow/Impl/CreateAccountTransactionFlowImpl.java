@@ -14,6 +14,8 @@ import java.time.LocalDate;
 @Component
 public class CreateAccountTransactionFlowImpl implements CreateAccountTransactionFlow {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(CreateAccountTransactionFlowImpl.class);
+
     private final AccountTransactionTranslator accountTransactionTranslator;
 
     public CreateAccountTransactionFlowImpl (AccountTransactionTranslator accountTransactionTranslator)
@@ -24,6 +26,12 @@ public class CreateAccountTransactionFlowImpl implements CreateAccountTransactio
     @Override
     public AccountTransactionDto create(AccountTransactionDto accountTransaction)
     {
+
+        if (LOGGER.isDebugEnabled()) {
+
+            String outputForLogging = "null";
+        }
+
         if (null == accountTransaction.getTransactionDate())
         {
             accountTransaction.setTransactionDate(LocalDate.now());
@@ -31,41 +39,3 @@ public class CreateAccountTransactionFlowImpl implements CreateAccountTransactio
         return accountTransactionTranslator.create(accountTransaction);
     }
 }
-
-//    private static final Logger LOGGER = LoggerFactory.getLogger(CreateAccountTransactionFlowImpl.class);
-//
-//    private final AccountTransactionTranslator accountTransactionTranslator;
-//    private final FetchAccountTypeFlow fetchAccountTypeFlow;
-//
-//    public CreateAccountTransactionFlowImpl(AccountTransactionTranslator accountTransactionTranslator,
-//                                            FetchAccountTypeFlow fetchAccountTypeFlow){
-//        this.accountTransactionTranslator = accountTransactionTranslator;
-//        this.fetchAccountTypeFlow = fetchAccountTypeFlow;
-//    }
-//    @Override
-//    public AccountTransactionDto create(AccountTransactionDto accountTransactionDto) {
-//
-//        if (LOGGER.isDebugEnabled()) {
-//
-//            String outputForLogging = "null";
-//
-//            LOGGER.info("The input object was {} and the Details is {}", accountTransactionDto, outputForLogging);
-//        }
-//
-//        accountTransactionDto.setTransactionId(null);
-//
-//        AccountType accountType = fetchAccountTypeFlow.getAccountTypeDbEntityByMnemonic(accountTransactionDto.getAccountTypeMnemonic());
-//
-//        if (LOGGER.isDebugEnabled()) {
-//            LOGGER.debug("Got AccountType for {} and the AccountTypeID is {}", accountTransactionDto.getAccountTypeMnemonic(), accountType.getAccountTypeId());
-//        }
-//
-//        AccountTransaction accountTransaction = accountTransactionDto.buildAccountTransaction(accountType);
-//
-//        AccountTransaction createdAccountTransaction = accountTransactionTranslator.save(accountTransaction);
-//
-//        AccountTransactionDto results = new AccountTransactionDto(createdAccountTransaction);
-//        LOGGER.info("The return object is {}", results);
-//        return results;
-//    }
-//}

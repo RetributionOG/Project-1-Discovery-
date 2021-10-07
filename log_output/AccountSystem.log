@@ -1,9 +1,14 @@
-{ "date" : "04-10-2021 17:00:46.992", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Starting RestServiceApplication on DESKTOP-FAIRF6M with PID 13068 (D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes started by camer in D:\DO\nwu\AccountSystem) }
-{ "date" : "04-10-2021 17:00:47.003", "level" : "DEBUG", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE }
-{ "date" : "04-10-2021 17:00:47.004", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : No active profile set, falling back to default profiles: default }
-{ "date" : "04-10-2021 17:01:25.841", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Starting RestServiceApplication on DESKTOP-FAIRF6M with PID 22288 (D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes started by camer in D:\DO\nwu\AccountSystem) }
-{ "date" : "04-10-2021 17:01:25.844", "level" : "DEBUG", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE }
-{ "date" : "04-10-2021 17:01:25.845", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : No active profile set, falling back to default profiles: default }
-{ "date" : "04-10-2021 17:01:29.607", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Started RestServiceApplication in 4.083 seconds (JVM running for 4.377) }
-{ "date" : "04-10-2021 17:01:54.987", "level" : "DEBUG", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Create a new AccountTransaction }
-{ "date" : "04-10-2021 17:01:55.056", "level" : "INFO ", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Response time 68 }
+{ "date" : "07-10-2021 23:07:01.923", "level" : "DEBUG", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Create a new AccountTransaction }
+{ "date" : "07-10-2021 23:07:01.953", "level" : "INFO ", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Response time 30 }
+{ "date" : "07-10-2021 23:07:10.985", "level" : "DEBUG", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Create a new AccountTransaction }
+{ "date" : "07-10-2021 23:07:10.997", "level" : "INFO ", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Response time 11 }
+{ "date" : "07-10-2021 23:08:26.581", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Starting RestServiceApplication on DESKTOP-FAIRF6M with PID 25724 (D:\DO\nwu\AccountSystem\AccountSystemWebSpringBoot\target\classes started by camer in D:\DO\nwu\AccountSystem) }
+{ "date" : "07-10-2021 23:08:26.584", "level" : "DEBUG", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE }
+{ "date" : "07-10-2021 23:08:26.584", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : No active profile set, falling back to default profiles: default }
+{ "date" : "07-10-2021 23:08:30.940", "level" : "INFO ", "class" : "z.a.n.a.w.sb.RestServiceApplication", " Log" : Started RestServiceApplication in 4.704 seconds (JVM running for 5.051) }
+{ "date" : "07-10-2021 23:10:26.056", "level" : "DEBUG", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Create a new AccountTransaction }
+{ "date" : "07-10-2021 23:10:26.165", "level" : "INFO ", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Response time 109 }
+{ "date" : "07-10-2021 23:12:14.978", "level" : "DEBUG", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Create a new AccountTransaction }
+{ "date" : "07-10-2021 23:12:14.990", "level" : "INFO ", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Response time 12 }
+{ "date" : "07-10-2021 23:14:35.505", "level" : "DEBUG", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Create a new AccountTransaction }
+{ "date" : "07-10-2021 23:14:35.520", "level" : "INFO ", "class" : "z.a.n.a.l.f.I.CreateAccountTransactionFlowImpl", " Log" : Response time 14 }
